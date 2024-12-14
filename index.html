@@ -3,9 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello from rahul</title>
+    <title>beneFIT Clothing - Stylish and Comfortable Activewear</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header styles */
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        /* Hero section styles */
+        .hero {
+            background-image: url('https://source.unsplash.com/random/1600x900/?fitness');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 5px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff4757;
+        }
+        /* Featured products styles */
+        .featured-products {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .product-card {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 1rem;
+        }
+        /* About section styles */
+        .about {
+            background-color: #f4f4f4;
+            padding: 4rem 0;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .about-image {
+            flex: 1;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .about-text {
+            flex: 1;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    Hello world
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">beneFIT</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Elevate Your Fitness Journey</h1>
+                <p>Discover stylish and comfortable activewear that empowers your workouts</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="products" class="featured-products container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/random/400x300/?fitness-shirt" alt="Fitness Shirt">
+                    <div class="product-info">
+                        <h3>Performance Tee</h3>
+                        <p>$29.99</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/random/400x300/?yoga-pants" alt="Yoga Pants">
+                    <div class="product-info">
+                        <h3>Flex Yoga Pants</h3>
+                        <p>$49.99</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/random/400x300/?running-shoes" alt="Running Shoes">
+                    <div class="product-info">
+                        <h3>Swift Runner</h3>
+                        <p>$89.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container about-content">
+                <div class="about-image">
+                    <img src="https://source.unsplash.com/random/600x400/?fitness-team" alt="About beneFIT">
+                </div>
+                <div class="about-text">
+                    <h2>About beneFIT</h2>
+                    <p>At beneFIT, we believe that great workouts start with great gear. Our mission is to provide high-quality, stylish activewear that enhances your performance and keeps you comfortable throughout your fitness journey.</p>
+                    <p>Founded by fitness enthusiasts, we understand the importance of clothing that moves with you, breathes well, and looks great. That's why we've dedicated ourselves to creating innovative designs using cutting-edge materials.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2023 beneFIT Clothing. All rights reserved.</p>
+            <p>Contact us: info@benefitclothing.com | (123) 456-7890</p>
+        </div>
+    </footer>
 </body>
 </html>
